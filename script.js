@@ -4,9 +4,7 @@ pushElementOnStack = () => { // добавляем элементы в стек
     addElements.addEventListener('click',function () {
         try {
             let N = prompt('Сколько элементов вы хотите добавить в стек:','')
-            if ( ! ( Number(N) ) ){
-                throw new Error('Ошибка ввода')
-            }
+            if ( ! ( Number(N) ) ) { throw new Error('Ошибка ввода') }
             for (let i = 0 ; i < N; i++){
                 let elem = parseFloat(prompt('Элемент ' + (i+1) + ':',''))
                 if ( ! ( Number(elem) ) ) { throw new Error('Ошибка ввода') }
