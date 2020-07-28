@@ -4,7 +4,7 @@ pushElementOnStack = () => {
     addElements.addEventListener('click',function () {
         let N = prompt('Сколько элементов вы хотите добавить в стек:','')
         for (let i = 0 ; i < N; i++){
-            let elem = parseFloat(prompt('Элемент 1:',''))
+            let elem = parseFloat(prompt('Элемент '+i+':',''))
             stack.push(elem)
         }
     })
