@@ -21,11 +21,7 @@ pushElementOnStack = () => { // добавляем элементы в стек
 deleteLastElementFromStack = () => { //удаляем последний ( или "верхний") элемент из стека
     let deleteLastElement = document.querySelector('#btn2')
     deleteLastElement.addEventListener('click',function () {
-    for (let i = 0 ; i < stack.length ; i++){
-        if (i === stack.length-1){
-            stack.pop(stack[i])
-        }
-    }
+    stack.pop()
     })
 }
 
